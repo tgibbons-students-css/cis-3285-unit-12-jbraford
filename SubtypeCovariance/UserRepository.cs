@@ -9,9 +9,9 @@ namespace SubtypeCovariance
     public class UserRepository : IEntityRepository<User>
     {
         //public override Entity GetByID(Guid id)
-        public override User GetByID(Guid id)
+        public  User GetByID(Guid ID)
         {
-            return new User(id);
+            return new User(ID);
         }
     }
 }
